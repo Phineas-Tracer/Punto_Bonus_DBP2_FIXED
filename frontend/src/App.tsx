@@ -13,10 +13,6 @@ function App() {
         <div>
             <Routes>
                 <Route path="/" element={<Login/>} />
-                <Route path="/dashboard" element={isAuthenticated ? <Dashboard/> : <Navigate to="/" />} />
-                <Route path="/search-flights" element={isAuthenticated ? <SearchFlights/> : <Navigate to="/" />} />
-                <Route path="/book-flight" element={isAuthenticated ? <BookFlight/> : <Navigate to="/" />} />
-                <Route path="/my-bookings" element={isAuthenticated ? <MyBooking/> : <Navigate to="/" />} />
             </Routes>
         </div>
     );
