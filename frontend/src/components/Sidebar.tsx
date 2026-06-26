@@ -19,8 +19,8 @@ export default function Sidebar({ isOpen }: SidebarProps) {
     return(
         <div className="w-64 bg-gray-100 h-full p-4 shadow-lg">
             <nav className="flex flex-col gap-4">
-                <Link to="/search"> Search Flights </Link>
-                <Link to="/bookings"> My Booked Flights </Link>
+                <Link to="/search-flights"> Search Flights </Link> 
+                <Link to="/my-bookings"> My Booked Flights </Link>
 
                 <button 
                     onClick={handleLogout}
